@@ -35,35 +35,32 @@
 ````
 
 > #### thead 고정 테이블 
->   - ````<table>````을 감싸줘야하는 기본 셋팅
-
-````
-<div class="table-area">
-    <div class="tb-scroll">
-        <div class="tb-fixed-head"></div>
-        <table>...</table>
-    </div>
-</div>
-````
-
-> - ````<table>````에 적용하여야 하는 class 
-
-````
-<table class="table table-bordered text-center table-hover">
-    <colgroup>
-        <col style="width: 5%;">
-        <col style="width: 80%;">
-        <col style="width: 15%;">
-    </colgroup>
-    <thead>
-        <tr>
-            <th><div class="fixed" style="width: 5%;">...</div></th>
-            <th><div class="fixed" style="width: 80%;">...</div></th>
-            <th><div class="fixed" style="width: 15%;">...</div></th>
-        </tr>
-    </thead>
-</table>
-````
+>   - ````<table>````을 감싸줘야하는 기본 셋팅>   
+>   ````
+>   <div class="table-area">
+>       <div class="tb-scroll">
+>           <div class="tb-fixed-head"></div>
+>           <table>...</table>
+>       </div>
+>   </div>
+>   ````
+> - ````<table>````에 적용하여야 하는 class >   
+>   ````
+>   <table class="table table-bordered text-center table-hover">
+>       <colgroup>
+>           <col style="width: 5%;">
+>           <col style="width: 80%;">
+>           <col style="width: 15%;">
+>       </colgroup>
+>       <thead>
+>           <tr>
+>               <th><div class="fixed" style="width: 5%;">...</div></th>
+>               <th><div class="fixed" style="width: 80%;">...</div></th>
+>               <th><div class="fixed" style="width: 15%;">...</div></th>
+>           </tr>
+>       </thead>
+>   </table>
+>   ````
 
 ## form
 ### ````<form>```` 에 추가 가능한 css

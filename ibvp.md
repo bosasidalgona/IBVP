@@ -2,12 +2,16 @@
 
 ## table
 
-### table 에 추가 가능한 css
-#### 기본 클래스 : .table
->   - **table-bordered** (all라인) / **table-striped**(2n 색바뀜)
+### ````<table>```` 에 추가 가능한 css
+> #### 기본 클래스
+>   - **table**
+
+> #### 추가 클래스
+>   - **table-bordered** (all라인) / **table-striped** (2n 색바뀜)
 >   - **table-condensed** (tr 위아래 간격이 좁음)
 >   - **table-hover** (hover시 tr라인에 색상)
 >   - **text-center**
+
 ````
     <table class="table">
         <colgroup>
@@ -35,8 +39,11 @@
     </table>
 ````
 
-> header fixed table 
-- table-area 로 감싼다
+> #### thead 고정 테이블 
+>   1. **table-area** 로 감싼다
+>   2. **tb-scroll** 로 감싼다
+>   3. **tb-fixed-head** 
+
 ````
     <div class="table-area">
         <div class="tb-scroll">

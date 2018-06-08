@@ -35,7 +35,7 @@
 ````
 
 > #### thead 고정 테이블 
->   - ````<table>````을 감싸줘야하는 기본 셋팅>   
+>   - ````<table>````을 감싸줘야하는 기본 셋팅
 >   ````
 >   <div class="table-area">
 >       <div class="tb-scroll">
@@ -44,8 +44,7 @@
 >       </div>
 >   </div>
 >   ````
-
-> - ````<table>````에 적용하여야 하는 class >   
+>   - ````<table>````에 적용하여야 하는 class 
 >   ````
 >   <table class="table table-bordered text-center table-hover">
 >       <colgroup>

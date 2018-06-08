@@ -44,6 +44,7 @@
 >       </div>
 >   </div>
 >   ````
+
 > - ````<table>````에 적용하여야 하는 class >   
 >   ````
 >   <table class="table table-bordered text-center table-hover">

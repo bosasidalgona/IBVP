@@ -2,14 +2,12 @@
 
 ## table
 
-> .table : 기본 클래스
-
-> table 에 추가 가능한 css
-- table-bordered (all라인) / table-striped(2n 색바뀜)
-- table-condensed (tr 위아래 간격이 좁음)
-- table-hover (hover시 tr라인에 색상)
-- text-center
-
+### table 에 추가 가능한 css
+#### 기본 클래스 : .table
+>   - **table-bordered** (all라인) / **table-striped**(2n 색바뀜)
+>   - **table-condensed** (tr 위아래 간격이 좁음)
+>   - **table-hover** (hover시 tr라인에 색상)
+>   - **text-center**
 ````
     <table class="table">
         <colgroup>
@@ -37,10 +35,32 @@
     </table>
 ````
 
+> header fixed table 
+- table-area 로 감싼다
+````
+    <div class="table-area">
+        <div class="tb-scroll">
+            <div class="tb-fixed-head"></div>
+            <table class="table table-bordered text-center table-hover">
+                <colgroup>
+                    <col style="width: 5%;">
+                    <col style="width: 80%;">
+                    <col style="width: 15%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><div class="fixed" style="width: 5%;">...</div></th>
+                        <th><div class="fixed" style="width: 80%;">...</div></th>
+                        <th><div class="fixed" style="width: 15%;">...</div></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+````
+
 ## form
-
 > 1.block form (기본)
-
 ````
     <form>
         <div class="form-group">
@@ -52,7 +72,6 @@
 
 > 2.inline form (하나의 라인)
 - form 아닌 div도 class 추가 가능
-
 ````
     <form class="form-inline">
         <div class="form-group">
@@ -69,7 +88,6 @@
 
 > 3. horizontal form (수평)
 - form 아닌 div도 class 추가 가능
-
 ````
     <form class="form-horizontal">
         <div class="form-group">
@@ -84,13 +102,12 @@
 ## button
 
 > .btn : 기본 클래스
-
 > button에 추가 가능한 class
-- btn-default | btn-primary | btn-success | btn-info | btn-danger | btn-warning (컬러)
-- btn-lg | btn-sm | btn-xs (사이즈)
-- btn-group | btn-group-vertical (그룹으로 만들어준다. 붙어있음)
-- btn-flat (각진버튼)
-- disabled
+- **btn-default** / **btn-primary** / **btn-success** / **btn-info** / **btn-danger** / **btn-warning** (컬러)
+- **btn-lg** / **btn-sm** / **btn-xs** (사이즈)
+- **btn-group** / **btn-group-vertical** (그룹으로 만들어준다. 붙어있음)
+- **btn-flat** (각진버튼)
+- **disabled**
 
 ````
     <button type="button" class="btn btn-default">button</button>

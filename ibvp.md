@@ -79,7 +79,7 @@
 ````
 
 #### 2.1.2. inline form (한 라인에 input 한 줄로)
->   - form 아닌 div도 class 추가 가능
+>   form 아닌 div도 class 추가 가능
 
 ````
 <form class="form-inline">
@@ -96,7 +96,7 @@
 ````
 
 #### 2.1.3. horizontal form (수평)
->   - form 아닌 div도 class 추가 가능
+>   form 아닌 div도 class 추가 가능
 
 ````
 <form class="form-horizontal">
@@ -110,18 +110,18 @@
 ````
 
 ### 2.2. ````<input>```` 에 추가 가능한 css
-
 #### 2.2.1. 기본 클래스
-    - ````.form-control````
+   - ````.form-control````
+
     ````
     <input type="text" class="form-control" placeholder="Text input">
     <textarea class="form-control" rows="3"></textarea>
     ````
 
 #### 2.2.2. 체크박스와 라디오
-    ##### 기본 (block)
-    - ````.radio````, ````.checkbox````
-    - 사용자들이 라벨에 마우스를 올렸을 때 "허락되지 않은" 커서를 표시하려면, ````disabled```` 추가
+##### 기본 (block)
+   - ````.radio````, ````.checkbox````
+   - 사용자들이 라벨에 마우스를 올렸을 때 "허락되지 않은" 커서를 표시하려면, ````disabled```` 추가
 
     ````
     <div class="checkbox">
@@ -153,16 +153,15 @@
 ****
 ## 3. button
 ### 3.1. ````<button>```` 에 추가 가능한 css
-
-> #### 3.1.1. 기본 클래스
->   - **btn**
+#### 3.1.1. 기본 클래스
+   - ````.btn````
 
 > #### 3.1.2. 추가 클래스
->   - **btn-default** / **btn-primary** / **btn-success** / **btn-info** / **btn-danger** / **btn-warning** (컬러)
->   - **btn-lg** / **btn-sm** / **btn-xs** (사이즈)
->   - **btn-group** / **btn-group-vertical** (그룹으로 만들어준다. 붙어있음)
->   - **btn-flat** (각진버튼)
->   - **disabled**
+>   - ````.btn-default```` / ````.btn-primary```` / ````.btn-success```` / ````.btn-info```` / ````.btn-danger```` / ````.btn-warning```` (컬러)
+>   - ````.btn-lg```` / ````.btn-sm```` / ````.btn-xs```` (사이즈)
+>   - ````.btn-group```` / ````.btn-group-vertical```` (그룹으로 만들어준다. 붙어있음)
+>   - ````.btn-flat```` (각진버튼)
+>   - ````.disabled````
 
 ````
 <button type="button" class="btn btn-default">button</button>

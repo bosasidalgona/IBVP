@@ -1,11 +1,10 @@
 # IBVP layout
 
 ## 1. table
-### 1.1. ````<table>```` 에 추가 가능한 css
-#### 1.1.1. 기본 클래스
+### 1.1. ````<table>```` 기본 클래스
 - ````.table````
 
-#### 1.1.2. 추가 클래스
+### 1.2. ````<table>```` 에 추가 가능한 css
 - ````.table-bordered```` (all라인) / ````.table-striped```` (2n 색바뀜)
 - ````.table-condensed```` (tr 위아래 간격이 좁음)
 - ````.table-hover```` (hover시 tr라인에 색상)
@@ -33,8 +32,8 @@
 </table>
 ````
 
-#### 1.1.3. thead 고정 테이블 
-- 기본 셋팅
+### 1.3. thead 고정 테이블 
+1. 기본 셋팅
 ````
 <div class="table-area">
     <div class="tb-scroll">
@@ -44,7 +43,7 @@
 </div>
 ````
 
-- ````<table>````에 적용하여야 하는 class 
+2. ````<table>````에 적용하여야 하는 class 
 ````
 <table class="table table-bordered text-center table-hover">
     <colgroup>
@@ -65,32 +64,33 @@
 ****
 ## 2. form
 ### 2.1. 폼 관련 레이아웃 css
+#### 2.1.1. block form (기본)
 
->   - block form (기본) 
->   ````
->   <form>
->       <div class="form-group">
->           <label for="exampleInputEmail1">이메일 주소</label>
->           <input type="email" class="form-control" id="exampleInputEmail1" > placeholder="이메일을 입력하세요">
->       </div>
->   </form>
->   ````
+````
+<form>
+    <div class="form-group">
+        <label for="exampleInputEmail1">이메일 주소</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="이메일을 입력하세요">
+    </div>
+</form>
+````
 
->   -inline form (한 라인에 input 한 줄로)
->   ````<form>```` 아닌 ````<div>````도 class 추가 가능.>   
->   ````
->   <form class="form-inline">
->       <div class="form-group">
->           <label for="exampleInputName2">Name</label>
->           <input type="text" class="form-control" id="exampleInputName2" >   placeholder="Jane Doe">
->       </div>
->       <div class="form-group">
->           <label for="exampleInputEmail2">Email</label>
->           <input type="email" class="form-control" id="exampleInputEmail2" > placeholder="jane.doe@example.com">
->       </div>
->       <button type="submit" class="btn btn-default">Send invitation</button>
->   </form>
->   ````
+#### 2.1.2. inline form (한 라인에 input 한 줄로)
+>   ````<form>```` 아닌 ````<div>````도 class 추가 가능.
+
+````
+<form class="form-inline">
+    <div class="form-group">
+        <label for="exampleInputName2">Name</label>
+        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail2">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+    </div>
+    <button type="submit" class="btn btn-default">Send invitation</button>
+</form>
+````
 
 #### 2.1.3. horizontal form (수평)
 >   ````<form>```` 아닌 ````<div>````도 class 추가 가능.

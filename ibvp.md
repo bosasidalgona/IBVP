@@ -63,7 +63,7 @@
 >   ````
 
 ## form
-### ````<form>```` 에 추가 가능한 css
+### form 관련 layout css
 
 > #### 1.block form (기본)
 
@@ -76,7 +76,7 @@
 </form>
 ````
 
-> #### 2.inline form (하나의 라인)
+> #### 2.inline form (한 라인에 input 한 줄로)
 >   - form 아닌 div도 class 추가 가능
 
 ````
@@ -106,6 +106,47 @@
     </div>
 </form>
 ````
+
+### ````<input>```` 에 추가 가능한 css
+
+> #### 기본 클래스
+>   - **form-control**
+>   ````
+>   <input type="text" class="form-control" placeholder="Text input">
+>   <textarea class="form-control" rows="3"></textarea>
+>   ````
+
+> #### 체크박스와 라디오
+>   ##### 기본 (block)
+>       - ````.radio````, ````.checkbox````
+>       - 사용자들이 라벨에 마우스를 올렸을 때 "허락되지 않은" 커서를 표시하려면, ````disabled```` 추가
+>       ````
+>       <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            Option one is this and that&mdash;be sure to include why it's great
+          </label>
+        </div>
+        <div class="checkbox disabled">
+          <label>
+            <input type="checkbox" value="" disabled>
+            Option two is disabled
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            Option one is this and that&mdash;be sure to include why it's great
+          </label>
+        </div>        
+        <div class="radio disabled">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+            Option three is disabled
+          </label>
+        </div>
+>       ````
 
 ## button
 ### ````<button>```` 에 추가 가능한 css

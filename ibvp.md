@@ -1,12 +1,12 @@
 # IBVP layout
+****
+## 1. table
+### 1.1. ````<table>```` 에 추가 가능한 css
 
-## table
-### ````<table>```` 에 추가 가능한 css
-
-> #### 기본 클래스
+> #### 1.1.1. 기본 클래스
 >   - **table**
 
-> #### 추가 클래스
+> #### 1.1.2. 추가 클래스
 >   - **table-bordered** (all라인) / **table-striped** (2n 색바뀜)
 >   - **table-condensed** (tr 위아래 간격이 좁음)
 >   - **table-hover** (hover시 tr라인에 색상)
@@ -34,8 +34,8 @@
 </table>
 ````
 
-> #### thead 고정 테이블 
->   1. ````<table>````을 감싸줘야하는 기본 셋팅
+> #### 1.1.3. thead 고정 테이블 
+>   1. 기본 셋팅
 >   ````
 >   <div class="table-area">
 >       <div class="tb-scroll">
@@ -61,11 +61,11 @@
 >       </thead>
 >   </table>
 >   ````
+****
+## 2. form
+### 2.1. form 관련 layout css
 
-## form
-### form 관련 layout css
-
-> #### 1.block form (기본)
+> #### 2.1.1. block form (기본)
 
 ````
 <form>
@@ -76,7 +76,7 @@
 </form>
 ````
 
-> #### 2.inline form (한 라인에 input 한 줄로)
+> #### 2.1.2. inline form (한 라인에 input 한 줄로)
 >   - form 아닌 div도 class 추가 가능
 
 ````
@@ -93,7 +93,7 @@
 </form>
 ````
 
-> #### 3. horizontal form (수평)
+> #### 2.1.3. horizontal form (수평)
 >   - form 아닌 div도 class 추가 가능
 
 ````
@@ -107,16 +107,16 @@
 </form>
 ````
 
-### ````<input>```` 에 추가 가능한 css
+### 2.2. ````<input>```` 에 추가 가능한 css
 
-> #### 기본 클래스
+> #### 2.2.1. 기본 클래스
 >   - **form-control**
 >   ````
 >   <input type="text" class="form-control" placeholder="Text input">
 >   <textarea class="form-control" rows="3"></textarea>
 >   ````
 
-> #### 체크박스와 라디오
+> #### 2.2.2. 체크박스와 라디오
 >   ##### 기본 (block)
 >       - ````.radio````, ````.checkbox````
 >       - 사용자들이 라벨에 마우스를 올렸을 때 "허락되지 않은" 커서를 표시하려면, ````disabled```` 추가
@@ -147,14 +147,14 @@
           </label>
         </div>
 >       ````
+****
+## 3. button
+### 3.1. ````<button>```` 에 추가 가능한 css
 
-## button
-### ````<button>```` 에 추가 가능한 css
-
-> #### 기본 클래스
+> #### 3.1.1. 기본 클래스
 >   - **btn**
 
-> #### 추가 클래스
+> #### 3.1.2. 추가 클래스
 >   - **btn-default** / **btn-primary** / **btn-success** / **btn-info** / **btn-danger** / **btn-warning** (컬러)
 >   - **btn-lg** / **btn-sm** / **btn-xs** (사이즈)
 >   - **btn-group** / **btn-group-vertical** (그룹으로 만들어준다. 붙어있음)

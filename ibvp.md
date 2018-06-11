@@ -1,16 +1,15 @@
 # IBVP layout
-****
+
 ## 1. table
 ### 1.1. ````<table>```` 에 추가 가능한 css
+#### 1.1.1. 기본 클래스
+   - ````.table````
 
-> #### 1.1.1. 기본 클래스
->   - **table**
-
-> #### 1.1.2. 추가 클래스
->   - **table-bordered** (all라인) / **table-striped** (2n 색바뀜)
->   - **table-condensed** (tr 위아래 간격이 좁음)
->   - **table-hover** (hover시 tr라인에 색상)
->   - **text-center**
+#### 1.1.2. 추가 클래스
+   - ````.table-bordered```` (all라인) / ````.table-striped```` (2n 색바뀜)
+   - ````.table-condensed```` (tr 위아래 간격이 좁음)
+   - ````.table-hover```` (hover시 tr라인에 색상)
+   - ````.text-center````
 
 ````
 <table class="table">
@@ -34,38 +33,41 @@
 </table>
 ````
 
-> #### 1.1.3. thead 고정 테이블 
->   1. 기본 셋팅
->   ````
->   <div class="table-area">
->       <div class="tb-scroll">
->           <div class="tb-fixed-head"></div>
->           <table>...</table>
->       </div>
->   </div>
->   ````
->   2. ````<table>````에 적용하여야 하는 class 
->   ````
->   <table class="table table-bordered text-center table-hover">
->       <colgroup>
->           <col style="width: 5%;">
->           <col style="width: 80%;">
->           <col style="width: 15%;">
->       </colgroup>
->       <thead>
->           <tr>
->               <th><div class="fixed" style="width: 5%;">...</div></th>
->               <th><div class="fixed" style="width: 80%;">...</div></th>
->               <th><div class="fixed" style="width: 15%;">...</div></th>
->           </tr>
->       </thead>
->   </table>
->   ````
+#### 1.1.3. thead 고정 테이블 
+    - 기본 셋팅
+
+    ````
+    <div class="table-area">
+        <div class="tb-scroll">
+            <div class="tb-fixed-head"></div>
+            <table>...</table>
+        </div>
+    </div>
+    ````
+
+    - ````<table>````에 적용하여야 하는 class 
+
+    ````
+    <table class="table table-bordered text-center table-hover">
+        <colgroup>
+            <col style="width: 5%;">
+            <col style="width: 80%;">
+            <col style="width: 15%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th><div class="fixed" style="width: 5%;">...</div></th>
+                <th><div class="fixed" style="width: 80%;">...</div></th>
+                <th><div class="fixed" style="width: 15%;">...</div></th>
+            </tr>
+        </thead>
+    </table>
+    ````
+
 ****
 ## 2. form
 ### 2.1. form 관련 layout css
-
-> #### 2.1.1. block form (기본)
+#### 2.1.1. block form (기본)
 
 ````
 <form>
@@ -76,7 +78,7 @@
 </form>
 ````
 
-> #### 2.1.2. inline form (한 라인에 input 한 줄로)
+#### 2.1.2. inline form (한 라인에 input 한 줄로)
 >   - form 아닌 div도 class 추가 가능
 
 ````
@@ -93,7 +95,7 @@
 </form>
 ````
 
-> #### 2.1.3. horizontal form (수평)
+#### 2.1.3. horizontal form (수평)
 >   - form 아닌 div도 class 추가 가능
 
 ````
@@ -109,44 +111,45 @@
 
 ### 2.2. ````<input>```` 에 추가 가능한 css
 
-> #### 2.2.1. 기본 클래스
->   - **form-control**
->   ````
->   <input type="text" class="form-control" placeholder="Text input">
->   <textarea class="form-control" rows="3"></textarea>
->   ````
+#### 2.2.1. 기본 클래스
+    - ````.form-control````
+    ````
+    <input type="text" class="form-control" placeholder="Text input">
+    <textarea class="form-control" rows="3"></textarea>
+    ````
 
-> #### 2.2.2. 체크박스와 라디오
->   ##### 기본 (block)
->       - ````.radio````, ````.checkbox````
->       - 사용자들이 라벨에 마우스를 올렸을 때 "허락되지 않은" 커서를 표시하려면, ````disabled```` 추가
->       ````
->       <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            Option one is this and that&mdash;be sure to include why it's great
-          </label>
-        </div>
-        <div class="checkbox disabled">
-          <label>
-            <input type="checkbox" value="" disabled>
-            Option two is disabled
-          </label>
-        </div>
+#### 2.2.2. 체크박스와 라디오
+    ##### 기본 (block)
+    - ````.radio````, ````.checkbox````
+    - 사용자들이 라벨에 마우스를 올렸을 때 "허락되지 않은" 커서를 표시하려면, ````disabled```` 추가
 
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-            Option one is this and that&mdash;be sure to include why it's great
-          </label>
-        </div>        
-        <div class="radio disabled">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-            Option three is disabled
-          </label>
-        </div>
->       ````
+    ````
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" value="">
+        Option one is this and that&mdash;be sure to include why it's great
+      </label>
+    </div>
+    <div class="checkbox disabled">
+      <label>
+        <input type="checkbox" value="" disabled>
+        Option two is disabled
+      </label>
+    </div>
+
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Option one is this and that&mdash;be sure to include why it's great
+      </label>
+    </div>        
+    <div class="radio disabled">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+        Option three is disabled
+      </label>
+    </div>
+    ````
 ****
 ## 3. button
 ### 3.1. ````<button>```` 에 추가 가능한 css

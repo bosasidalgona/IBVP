@@ -64,19 +64,19 @@
 
 ****
 ## 2. form
-### 2.1. form 관련 layout css
-#### 2.1.1. block form (기본)
+### 2.1. 폼 관련 레이아웃 css
 
-````
-<form>
-    <div class="form-group">
-        <label for="exampleInputEmail1">이메일 주소</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="이메일을 입력하세요">
-    </div>
-</form>
-````
+>   - block form (기본) 
+>   ````
+>   <form>
+>       <div class="form-group">
+>           <label for="exampleInputEmail1">이메일 주소</label>
+>           <input type="email" class="form-control" id="exampleInputEmail1" > placeholder="이메일을 입력하세요">
+>       </div>
+>   </form>
+>   ````
 
-#### 2.1.2. inline form (한 라인에 input 한 줄로)
+>   -inline form (한 라인에 input 한 줄로)
 >   ````<form>```` 아닌 ````<div>````도 class 추가 가능.
 
 ````

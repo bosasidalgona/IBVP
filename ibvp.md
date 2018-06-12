@@ -1,11 +1,11 @@
 # IBVP layout
 
 ## 1. table
-### 1.1. ```<table>``` 기본 클래스
+#### 1.1. ```<table>``` 기본 클래스
 - ```.table```
 
-### 1.2. ```<table>``` 에 추가 가능한 css
-- ```.table-bordered``` (all라인) / ```.table-striped``` (2n 색바뀜)
+#### 1.2. ```<table>``` 에 추가 가능한 css
+- ```.table-bordered``` (all라인) / ```.table-striped``` (짝수라인 색을 넣음)
 - ```.table-condensed``` (tr 위아래 간격이 좁음)
 - ```.table-hover``` (hover시 tr라인에 색상)
 - ```.text-center```
@@ -32,7 +32,7 @@
 </table>
 ```
 
-### 1.3. thead 고정 테이블 
+#### 1.3. thead 고정 테이블 
 1. 기본 셋팅
 ```
 <div class="table-area">
@@ -106,46 +106,54 @@
 </form>
 ```
 
-### 2.2. ```<input>``` 에 추가 가능한 css
-#### 2.2.1. 기본 클래스
-- ```<input>```에 ```.form-control``` 적용.
-    ```
-    <input type="text" class="form-control" placeholder="Text input">
-    <textarea class="form-control" rows="3"></textarea>
-    ```
+### 2.2. 지원되는 콘트롤들
+> 폼 레이아웃 예제에서 지원되는 표준 폼콘트롤 예제들.
+#### 2.2.1. inputs
+- ```<input>``` ,```<select>```, ```<textarea>``` 에 ```.form-control``` 적용.
+
+```
+<input type="text" class="form-control" placeholder="Text input">
+
+<select class="form-control">
+    <option>1</option>
+    <option>2</option>
+</select>
+
+<textarea class="form-control" rows="3"></textarea>
+```
 
 #### 2.2.2. 체크박스와 라디오
-> - 기본   (block)  : ```<div>```에  ```.radio``` 또는 ```.checkbox``` 적용.
-> - 인라인 (inline) : ```<div>```에  ```.radio-inline``` 또는 ```.checkbox-inline``` 적용.
-> - 사용자들이 라벨에 마우스를 올렸을 때 "허락되지 않은" 커서를 표시하려면, ```disabled``` 추가.
+- 기본   (block)  : ```<div>```에  ```.radio``` 또는 ```.checkbox``` 적용.
+- 인라인 (inline) : ```<div>```에  ```.radio-inline``` 또는 ```.checkbox-inline``` 적용.
+- 사용자들이 라벨에 마우스를 올렸을 때 "허락되지 않은" 커서를 표시하려면, ```disabled``` 추가.
 
-    ```
-    <div class="checkbox">
-      <label>
+```
+<div class="checkbox">
+    <label>
         <input type="checkbox" value="">
         Option one is this and that&mdash;be sure to include why it's great
-      </label>
-    </div>
-    <div class="checkbox disabled">
-      <label>
+    </label>
+</div>
+<div class="checkbox disabled">
+    <label>
         <input type="checkbox" value="" disabled>
         Option two is disabled
-      </label>
-    </div>
+    </label>
+</div>
 
-    <div class="radio">
-      <label>
+<div class="radio">
+    <label>
         <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
         Option one is this and that&mdash;be sure to include why it's great
-      </label>
-    </div>        
-    <div class="radio disabled">
-      <label>
+    </label>
+</div>        
+<div class="radio disabled">
+    <label>
         <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
         Option three is disabled
-      </label>
-    </div>
-    ```
+    </label>
+</div>
+```
 
 #### 2.2.3. 입력 그룹
 ##### 기본
